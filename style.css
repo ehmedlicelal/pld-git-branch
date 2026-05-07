@@ -218,3 +218,98 @@ header {
     gap: 12px;
   }
 }
+
+/* =========================
+   Team Members Section
+========================= */
+
+.team-section {
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.team-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.team-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* Team Card */
+.team-card {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Circle Initial */
+.team-image {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Member Name */
+.team-card h3 {
+  font-size: 1.4rem;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* Contribution Text */
+.team-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-section {
+    padding: 60px 15px;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .team-subtitle {
+    font-size: 0.95rem;
+  }
+}
