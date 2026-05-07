@@ -1,0 +1,218 @@
+:root {
+  /* Global Colors */
+  --primary-color: #0056b3;
+  --secondary-color: #6c757d;
+  --accent-color: #17a2b8;
+  --background-light: #f8f9fa;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --border-color: #dee2e6;
+
+  /* Global Fonts */
+  --font-primary: 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Georgia', serif;
+
+  /* Global Spacing Variables */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--text-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-primary);
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+}
+
+/* =========================================
+   STUDENT 2: ABOUT SECTION & FOOTER STYLES
+   ========================================= */
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9; /* Student 5 might update this to a var() */
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mission, .history {
+    max-width: 400px;
+    text-align: left;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/* Student 4: Projects & Footer Styles */
+.projects-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: var(--text-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-image .placeholder-img {
+    height: 180px;
+    background: var(--secondary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.project-info { padding: var(--spacing-md); }
+
+.btn-project {
+    display: inline-block;
+    margin-top: var(--spacing-md);
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+}
+
+.footer-section {
+    background: var(--text-dark);
+    color: white;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: var(--spacing-md);
+    font-size: 0.8rem;
+}
